@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/742cb78a07.js" crossorigin="anonymous"></script>
+    <title>Desafio Encriptacion</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <h1 class="alura">
+            <img src="imagenes/Logo.png" alt="logo alura" class="logo">
+        </h1>
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+                placeholder="Ingrese el texto aqui"></textarea>
+
+            <div class="terminos">
+                <p class="alerta">*Solo letras minusculas y sin acento</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="manejarEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="manejarDesencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="encriptado" id="contenedor-desencriptado">
+            <img src="imagenes/Muñeco.png" alt="munieco" id="munieco">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningun mensaje fue<br>encontrado</h2>
+                <p id="parrafo">Ingrese el texto que desea encriptar o<br>desencriptar. </p>
+            </div>
+            
+            <div class="copiar">
+                <button class="btn-copiar" type="button" onclick="copiarTextoEncriptado()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="contenedor-datos">
+            <div class="datos">
+                <p>Todos los derechos reservados. © 2024 - Desarrollado por Ana Dutli </p>
+            </div>
+            <div class="redes">
+                <p>Encuéntrame en:</p>
+                <a href="https://github.com/cristinadutli/"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ana-dutli-779b894b/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
